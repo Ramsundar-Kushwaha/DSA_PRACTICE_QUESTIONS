@@ -1,2 +1,2 @@
 # DSA_PRACTICE_QUESTIONS
-DSA Practice Questions Which is Assigned by Our DSA Teacher "Vivek Sir" at Quantum University in Our DSA Classes.
+DSA Practice Questions Which is Provided by Our DSA Teacher "Vivek Sir" at Quantum University While Our DSA Classes.
