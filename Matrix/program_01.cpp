@@ -4,30 +4,27 @@ using namespace std;
 
 class Is_Squar{
   public:
-    bool check(int m, int n){
-      try{
-        if(m == n){
-          cout << "Is A Square Matrix";
-          return true; 
-        }else{
-          throw 1;
-        }
-      }
-      catch(int){
-        cout << "Not A Square Matrix\n";
+    template<size_t R, size_t C> //generic or c++ templates
+    bool check(int(&matrix)[R][C]){
+      cout << "Row: " << R << endl;
+      cout << "Col: " << C << endl;
+      if(R == C){
+        cout << "Is Square Matrix\n";
+        return true;
+      }else{
+        cout << "Is Not Square Matrix\n";
         return false;
       }
     }
 };
+
 int main(){
+  Is_Squar s;
   int A[3][3] = {
     {1,2,3},
     {4,5,6},
     {7,8,9}
   };
-
-  Is_Squar S;
-  S.check(3, 3);
-
+  s.check(A);
   return 0;
 }
